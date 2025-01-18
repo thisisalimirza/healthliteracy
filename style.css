@@ -255,3 +255,20 @@ h2 {
         text-align: right;
     }
 }
+
+.citation-note {
+    margin-top: 2rem;
+    text-align: center;
+    color: #666;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+.citation-note a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.citation-note a:hover {
+    text-decoration: underline;
+}
