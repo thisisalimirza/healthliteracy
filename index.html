@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Literacy Assessment</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#4F46E5">
+</head>
+<body>
+    <div class="container">
+        <h1>Health Literacy Assessment</h1>
+        <form id="healthLiteracyForm">
+            <!-- Reading Comprehension Section -->
+            <div class="section">
+                <h2>Reading Comprehension</h2>
+                <p class="section-info">This section evaluates your ability to understand health-related materials. Select the most appropriate answer for each question.</p>
+                
+                <div class="passage">
+                    <p class="passage-text">
+                        Your doctor has sent you to have a _______ X-ray.
+                    </p>
+                    <div class="options" role="radiogroup" aria-labelledby="r1-question">
+                        <input type="radio" name="r1" value="1" id="r1-1" required>
+                        <label for="r1-1">stomach</label>
+                        <input type="radio" name="r1" value="0" id="r1-2">
+                        <label for="r1-2">diabetes</label>
+                        <input type="radio" name="r1" value="0" id="r1-3">
+                        <label for="r1-3">stitches</label>
+                        <input type="radio" name="r1" value="0" id="r1-4">
+                        <label for="r1-4">germs</label>
+                    </div>
+                </div>
+
+                <div class="passage">
+                    <p class="passage-text">
+                        When you go to _______ this medicine, you must have an empty stomach.
+                    </p>
+                    <div class="options" role="radiogroup" aria-labelledby="r2-question">
+                        <input type="radio" name="r2" value="0" id="r2-1" required>
+                        <label for="r2-1">buy</label>
+                        <input type="radio" name="r2" value="0" id="r2-2">
+                        <label for="r2-2">hold</label>
+                        <input type="radio" name="r2" value="1" id="r2-3">
+                        <label for="r2-3">take</label>
+                        <input type="radio" name="r2" value="0" id="r2-4">
+                        <label for="r2-4">inject</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Numeracy Section -->
+            <div class="section">
+                <h2>Numeracy Assessment</h2>
+                <p class="section-info">This section tests your ability to understand and work with numbers in medical contexts. Choose the best answer for each question.</p>
+
+                <div class="question">
+                    <p class="passage-text">If you take your first tablet at 7:00 am, and you need to take a tablet every 6 hours, what time should you take your next tablet?</p>
+                    <div class="options" role="radiogroup" aria-labelledby="n1-question">
+                        <input type="radio" name="n1" value="1" id="n1-1" required>
+                        <label for="n1-1">1:00 pm</label>
+                        <input type="radio" name="n1" value="0" id="n1-2">
+                        <label for="n1-2">2:00 pm</label>
+                        <input type="radio" name="n1" value="0" id="n1-3">
+                        <label for="n1-3">7:00 pm</label>
+                        <input type="radio" name="n1" value="0" id="n1-4">
+                        <label for="n1-4">12:00 pm</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="passage-text">Your prescription says: Take 2 tablets by mouth every 6 hours as needed. What is the maximum number of tablets you can take in one day?</p>
+                    <div class="options" role="radiogroup" aria-labelledby="n2-question">
+                        <input type="radio" name="n2" value="1" id="n2-1" required>
+                        <label for="n2-1">8 tablets</label>
+                        <input type="radio" name="n2" value="0" id="n2-2">
+                        <label for="n2-2">6 tablets</label>
+                        <input type="radio" name="n2" value="0" id="n2-3">
+                        <label for="n2-3">4 tablets</label>
+                        <input type="radio" name="n2" value="0" id="n2-4">
+                        <label for="n2-4">12 tablets</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Assessment</button>
+        </form>
+
+        <div id="results" class="results hidden">
+            <h2>Your Results</h2>
+            <p id="score"></p>
+            <p id="reading-score"></p>
+            <p id="numeracy-score"></p>
+            <p id="interpretation"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
